@@ -4,7 +4,7 @@
     
 }
 body{
-    background-image: linear-gradient(rgba(0,0,255),rgba(0,0,100,0.5)),url('images/moi.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,100,0.5)),url('/images/moi.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
