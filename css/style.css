@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/img_bg_3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: poppins;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.item {   
+    /* Center the contents of the grid items. Making each grid item a Flex Container */
+       display: flex;
+         /* Horizontal and Vertical centering */
+       justify-content: center;
+       align-items: center;
+       border: 0px solid #87b5ff;
+       border-radius: 3px;
+       font-size: 2em;
+       font-family: sans-serif;
+       font-weight: bold;    
+} 
+.me{
+    position: absolute;
+    left: 70%;
+    top:20%;
+    text-transform: uppercase !important;
+    color: #fff;
+    transform: translate(-50% ,-50%);
+}
+      
+       .container {
+        
+        display: grid;
+       grid-template-columns: repeat(auto-fill, 500px);
+       grid-template-rows: 1fr;
+       justify-content: center;
+       grid-gap: 1rem;
+    }
+    .photo{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    @media screen and (max-width:600px){
+        .container{
+            margin-top: 2rem;
+        }
+        .item{
+            background-image: linear-gradient(rgba(0,0,255,0.5),rgba(6, 6, 10, 0.8));
+        }
+        .me{
+            position: absolute;
+            top:20%;
+            left:50%;
+            background-image: linear-gradient(rgba(0,0,255,0.5),rgba(6, 6, 10, 0.8));
+            transform: translate(-50%,-50%);
+            margin-top: 30rem;
+            text-align: center;
+        }
+    }
+
+
+
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.wrapper h2{
+    margin:0;
+    padding: 0;
+    color:#fff;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    margin-top: 2rem;
+    
+    font-size: 30px;
+}
+.left{
+    border: 0px solid white;
+    background-image: linear-gradient(rgba(0,0,255,0.5),rgba(0,0,255,0.1));
+    box-shadow: 2px 2px 10px #fff;
+}
+
+.left > p{
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    line-height: 35px;
+}
+.left > a {
+    background: crimson;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 10px #fff;
+}
+span::before{
+    content: '';
+    animation: animate infinite 8s;
+}
+@keyframes animate{
+    0%{
+        content:'Freelancer';
+    }
+    20%{
+        content: 'Marketer';
+    }
+    40%{
+        content: 'Photographer';
+    }
+    60%{
+        content: 'Architect';
+    }
+    80%{
+        content: 'Developer';
+    }
+    100%{
+        content: 'Designer';
+    }    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       /* GLOBAL STYLES */
+* {
+   box-sizing: border-box;
+   }
+  body {
+   background-color: #AAA;margin: 50px;
+   margin: 0;
+   padding: 0;
+    }
+/* Each item in the grid contains numbers */
+.item {   
+/* Center the contents of the grid items. Making each grid item a Flex Container */
+   display: flex;
+     /* Horizontal and Vertical centering */
+   justify-content: center;
+   align-items: center;
+   border: 5px solid #87b5ff;
+   border-radius: 3px;
+   font-size: 2em;
+   font-family: sans-serif;
+   font-weight: bold;
+   background-color: #1c57b5;
+   ;
+   height: 70vh;
+   }
+   .container {
+       margin-top: 0;
+    display: grid;
+   grid-template-columns: repeat(auto-fill, 500px);
+   grid-template-rows: 1fr;
+   justify-content: center;
+   grid-gap: 1.5rem;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">First</div>
+        <div class="item item2">Second</div>       
+       
+     </div>
+</body>
+</html>
