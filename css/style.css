@@ -79,26 +79,26 @@ span::before {
 
 @keyframes animate {
     0% {
-        content: 'Freelancer';
+        content: 'Aghoghovwia Andrew';
     }
 
     20% {
-        content: 'Marketer';
+        content: 'a Mobile Developer';
     }
 
     40% {
-        content: 'Photographer';
+        content: 'a Digital Marketer';
     }
 
     60% {
-        content: 'Architect';
+        content: 'a SEO Optimizer';
     }
 
     80% {
-        content: 'Developer';
+        content: 'a Web Developer';
     }
 
     100% {
-        content: 'Designer';
+        content: 'a Graphic Designer';
     }
 }
