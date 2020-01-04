@@ -46,6 +46,9 @@ body{
     .profile_image{
         width:60%;
     }
+    .banner-message{
+        margin-top: 10px;
+    }
 }
 .team{
     border-right: 2px solid dodgerblue;
